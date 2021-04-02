@@ -22,11 +22,12 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems:'center',
         justifyContent: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.3)',
     },
     modalView: {
+        minWidth: Dimensions.get('window').width - 100,
         backgroundColor: '#fff',
         borderRadius: 4,
-        padding: 20,
         shadowColor: '#000',
         shadowOffset: {
             width: 0,

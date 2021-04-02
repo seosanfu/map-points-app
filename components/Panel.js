@@ -1,14 +1,13 @@
 import React from 'react';
 import { StyleSheet, Button, View } from 'react-native';
 
-export default () => {
+export default ({ onPressLeft, textLeft, togglePointsFilter }) => {
     return (
         <View style={styles.panel}>
-            <Button title="Lista" />
-            <Button title="Mostrat/Ocultar" />
-
+            <Button title={textLeft} onPress={onPressLeft} />
+            <Button title="Mostrat/Ocultar" onPress={togglePointsFilter} />
         </View>
-    )
+    );
 };
 
 const styles = StyleSheet.create({
